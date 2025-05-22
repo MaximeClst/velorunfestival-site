@@ -32,7 +32,7 @@ export default function Home() {
               asChild
               variant="outline"
               size="lg"
-              className="bg-white/10 border-white hover:bg-white hover:text-black backdrop-blur-sm"
+              className="bg-white/10 hover:bg-white text-black hover:text-black backdrop-blur-sm"
             >
               <Link href="/contact">Nous contacter</Link>
             </Button>
