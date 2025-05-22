@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VeloRunFestival - Site Web
 
-## Getting Started
+Site web de l&apos;association VeloRunFestival, dédié à la promotion des événements cyclistes.
 
-First, run the development server:
+## Technologies utilisées
+
+- Next.js 14
+- TypeScript
+- TailwindCSS
+- shadcn/ui
+- React 19
+
+## Prérequis
+
+- Node.js 18.17 ou supérieur
+- npm ou yarn
+
+## Installation
+
+1. Clonez le dépôt :
+
+```bash
+git clone [URL_DU_REPO]
+cd velorunfestival-site
+```
+
+2. Installez les dépendances :
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+3. Créez un fichier `.env.local` à la racine du projet et ajoutez les variables d&apos;environnement nécessaires :
+
+```env
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
+
+## Développement
+
+Pour lancer le serveur de développement :
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Le site sera accessible à l&apos;adresse [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Pour construire le projet pour la production :
 
-## Learn More
+```bash
+npm run build
+# ou
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Pour démarrer le serveur de production :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+# ou
+yarn start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Structure du projet
 
-## Deploy on Vercel
+```
+velorunfestival-site/
+├── public/              # Fichiers statiques
+│   └── images/         # Images du site
+├── src/
+│   ├── app/           # Pages de l&apos;application
+│   ├── components/    # Composants React
+│   │   ├── layout/   # Composants de mise en page
+│   │   └── ui/       # Composants UI réutilisables
+│   └── lib/          # Utilitaires et configurations
+├── .env.local         # Variables d&apos;environnement
+└── package.json       # Dépendances et scripts
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Fonctionnalités
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Page d&apos;accueil avec présentation de l&apos;association
+- Liste des événements à venir
+- Liste des épreuves disponibles
+- Formulaire de contact
+- Formulaire pour devenir bénévole
+- Design responsive
+- Interface moderne avec TailwindCSS et shadcn/ui
+
+## Contribution
+
+1. Créez une branche pour votre fonctionnalité (`git checkout -b feature/ma-fonctionnalite`)
+2. Committez vos changements (`git commit -m &apos;Ajout de ma fonctionnalité&apos;`)
+3. Poussez vers la branche (`git push origin feature/ma-fonctionnalite`)
+4. Ouvrez une Pull Request
+
+## Licence
+
+Ce projet est sous licence [MIT](LICENSE).
