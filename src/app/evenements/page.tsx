@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 // Données temporaires pour les événements
 const events = [
@@ -11,7 +11,7 @@ const events = [
     location: "Forêt de Fontainebleau",
     description:
       "Une course exigeante à travers les plus beaux sentiers de la région. Parcours de 42km avec 800m de dénivelé positif.",
-    image: "/images/event-1.jpg",
+    image: "/images/departement-reunion.png",
     difficulty: "Difficile",
     price: "45€",
   },
@@ -22,7 +22,7 @@ const events = [
     location: "Massif des Vosges",
     description:
       "Un défi technique pour les amateurs de descente et de sensations fortes. 5 spéciales chronométrées.",
-    image: "/images/event-2.jpg",
+    image: "/images/departement-reunion.png",
     difficulty: "Expert",
     price: "55€",
   },
@@ -33,7 +33,7 @@ const events = [
     location: "Parc de la Villette",
     description:
       "Une journée conviviale pour toute la famille avec des parcours adaptés à tous les niveaux.",
-    image: "/images/event-3.jpg",
+    image: "/images/departement-reunion.png",
     difficulty: "Facile",
     price: "15€",
   },
@@ -44,7 +44,7 @@ const events = [
     location: "Vallée de la Loire",
     description:
       "Découvrez les chemins de campagne et les petites routes tranquilles. Parcours de 60km sur chemins et routes.",
-    image: "/images/event-4.jpg",
+    image: "/images/departement-reunion.png",
     difficulty: "Intermédiaire",
     price: "35€",
   },

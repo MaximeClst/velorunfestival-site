@@ -1,41 +1,47 @@
+import CarouselPartenaires from "@/components/carousel-partenaires";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center">
-        <div className="absolute inset-0 z-0">
+      <section className="relative">
+        {/* Image Hero */}
+        <div className="h-screen relative">
           <Image
-            src="/images/hero-bg.jpg"
-            alt="Course cycliste"
+            src="/images/velorun affiche v5.png"
+            alt="Affiche VeloRun Festival"
             fill
-            className="object-cover brightness-50"
+            className="object-cover w-full h-full"
             priority
           />
         </div>
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            VeloRunFestival
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-            Vivez l&apos;expérience unique des courses cyclistes dans une
-            ambiance festive
-          </p>
-          <div className="space-x-4">
-            <Button asChild size="lg">
-              <Link href="/evenements">Voir les événements</Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="bg-white/10 hover:bg-white text-black hover:text-black backdrop-blur-sm"
-            >
-              <Link href="/contact">Nous contacter</Link>
-            </Button>
+
+        {/* Contenu */}
+        <div className="bg-white py-20">
+          <div className="container mx-auto text-center px-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Velo Run Festival
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+              Vivez l&apos;expérience unique des courses cyclistes dans une
+              ambiance festive
+            </p>
+            <div className="space-x-4">
+              <Button asChild size="lg">
+                <Link href="/evenements">Voir les événements</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="bg-white/10 hover:bg-white text-black hover:text-black backdrop-blur-sm"
+              >
+                <Link href="/contact">Nous contacter</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -47,9 +53,9 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-6">Notre Association</h2>
             <p className="text-lg text-gray-600 mb-8">
               VeloRunFestival est une association dédiée à la promotion du
-              cyclisme à travers des événements sportifs et festifs. Notre
-              mission est de créer des moments inoubliables où sport et
-              convivialité se rencontrent.
+              cyclisme à travers des événements sportifs et festifs de La
+              Réunion. Notre mission est de créer des moments inoubliables où
+              sport et convivialité se rencontrent.
             </p>
             <Button asChild variant="outline">
               <Link href="/a-propos">En savoir plus</Link>
@@ -69,7 +75,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/images/event-1.jpg"
+                  src="/images/departement-reunion.png"
                   alt="Marathon VTT"
                   fill
                   className="object-cover"
@@ -94,7 +100,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/images/event-2.jpg"
+                  src="/images/departement-reunion.png"
                   alt="Enduro Challenge"
                   fill
                   className="object-cover"
@@ -119,7 +125,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/images/event-3.jpg"
+                  src="/images/departement-reunion.png"
                   alt="Course Familiale"
                   fill
                   className="object-cover"
@@ -142,6 +148,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <CarouselPartenaires />
 
       {/* Pourquoi participer */}
       <section className="py-20 bg-white">

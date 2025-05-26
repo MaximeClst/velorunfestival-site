@@ -1,9 +1,10 @@
 "use client";
 
-import Link from "next/link";
+import { Logo } from "@/components/icons/Logo";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,8 +14,9 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <span className="text-xl font-bold">VeloRunFestival</span>
+          <Link href="/" className="flex items-center gap-2">
+            <Logo size={72} />
+            <span className="text-xl font-bold">Velo Run Festival</span>
           </Link>
 
           {/* Navigation Desktop */}
