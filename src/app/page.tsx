@@ -63,94 +63,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Événements à venir */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Événements à venir
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="relative h-48">
-                <Image
-                  src="/images/departement-reunion.png"
-                  alt="Marathon VTT"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Marathon VTT</h3>
-                <p className="text-gray-600 mb-4">15 Juin 2024</p>
-                <p className="text-gray-600 mb-4">
-                  Une course exigeante à travers les plus beaux sentiers de la
-                  région.
-                </p>
-                <Button asChild className="w-full">
-                  <Link href="/evenements/marathon-vtt">
-                    Voir l&apos;événement
-                  </Link>
-                </Button>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="relative h-48">
-                <Image
-                  src="/images/departement-reunion.png"
-                  alt="Enduro Challenge"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Enduro Challenge</h3>
-                <p className="text-gray-600 mb-4">22 Juin 2024</p>
-                <p className="text-gray-600 mb-4">
-                  Un défi technique pour les amateurs de descente et de
-                  sensations fortes.
-                </p>
-                <Button asChild className="w-full">
-                  <Link href="/evenements/enduro-challenge">
-                    Voir l&apos;événement
-                  </Link>
-                </Button>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="relative h-48">
-                <Image
-                  src="/images/departement-reunion.png"
-                  alt="Course Familiale"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Course Familiale</h3>
-                <p className="text-gray-600 mb-4">29 Juin 2024</p>
-                <p className="text-gray-600 mb-4">
-                  Une journée conviviale pour toute la famille avec des parcours
-                  adaptés.
-                </p>
-                <Button asChild className="w-full">
-                  <Link href="/evenements/course-familiale">
-                    Voir l&apos;événement
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <CarouselPartenaires />
-
       {/* Pourquoi participer */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -248,6 +160,92 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Événements à venir */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Événements à venir
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="relative h-48">
+                <Image
+                  src="/images/departement-reunion.png"
+                  alt="Marathon VTT"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Marathon VTT</h3>
+                <p className="text-gray-600 mb-4">15 Juin 2024</p>
+                <p className="text-gray-600 mb-4">
+                  Une course exigeante à travers les plus beaux sentiers de la
+                  région.
+                </p>
+                <Button asChild className="w-full">
+                  <Link href="/evenements/marathon-vtt">
+                    Voir l&apos;événement
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="relative h-48">
+                <Image
+                  src="/images/departement-reunion.png"
+                  alt="Enduro Challenge"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Enduro Challenge</h3>
+                <p className="text-gray-600 mb-4">22 Juin 2024</p>
+                <p className="text-gray-600 mb-4">
+                  Un défi technique pour les amateurs de descente et de
+                  sensations fortes.
+                </p>
+                <Button asChild className="w-full">
+                  <Link href="/evenements/enduro-challenge">
+                    Voir l&apos;événement
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="relative h-48">
+                <Image
+                  src="/images/departement-reunion.png"
+                  alt="Course Familiale"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Course Familiale</h3>
+                <p className="text-gray-600 mb-4">29 Juin 2024</p>
+                <p className="text-gray-600 mb-4">
+                  Une journée conviviale pour toute la famille avec des parcours
+                  adaptés.
+                </p>
+                <Button asChild className="w-full">
+                  <Link href="/evenements/course-familiale">
+                    Voir l&apos;événement
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CarouselPartenaires />
     </>
   );
 }
