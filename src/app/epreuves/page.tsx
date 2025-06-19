@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 // Données temporaires pour les épreuves
 const epreuves = [
@@ -12,19 +12,19 @@ const epreuves = [
     denivele: "800m",
     description:
       "Une épreuve exigeante sur les sentiers de la forêt. Parcours technique avec des passages en sous-bois et des montées raides.",
-    image: "/images/epreuve-1.jpg",
+    image: "/images/epreuve-img/epreuve-1.jpg",
     difficulty: "Difficile",
     categories: ["Élite", "Senior", "Master"],
   },
   {
     id: 2,
-    title: "Enduro Challenge",
-    type: "VTT",
+    title: "Vélo Run Marmaille",
+    type: "Trial",
     distance: "5 spéciales",
     denivele: "1200m",
     description:
       "5 spéciales chronométrées en descente. Des sections techniques et engagées pour les amateurs de sensations fortes.",
-    image: "/images/epreuve-2.jpg",
+    image: "/images/epreuve-img/epreuve-marmaille.jpg",
     difficulty: "Expert",
     categories: ["Élite", "Senior"],
   },

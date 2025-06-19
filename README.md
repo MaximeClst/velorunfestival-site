@@ -1,6 +1,6 @@
 # VeloRunFestival - Site Web
 
-Site web de l&apos;association VeloRunFestival, dédié à la promotion des événements cyclistes.
+Site web de l'association VeloRunFestival, dédié à la promotion des événements cyclistes.
 
 ## Technologies utilisées
 
@@ -32,7 +32,7 @@ npm install
 yarn install
 ```
 
-3. Créez un fichier `.env.local` à la racine du projet et ajoutez les variables d&apos;environnement nécessaires :
+3. Créez un fichier `.env.local` à la racine du projet et ajoutez les variables d'environnement nécessaires :
 
 ```env
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
@@ -48,7 +48,7 @@ npm run dev
 yarn dev
 ```
 
-Le site sera accessible à l&apos;adresse [http://localhost:3000](http://localhost:3000).
+Le site sera accessible à l'adresse [http://localhost:3000](http://localhost:3000).
 
 ## Production
 
@@ -75,18 +75,18 @@ velorunfestival-site/
 ├── public/              # Fichiers statiques
 │   └── images/         # Images du site
 ├── src/
-│   ├── app/           # Pages de l&apos;application
+│   ├── app/           # Pages de l'application
 │   ├── components/    # Composants React
 │   │   ├── layout/   # Composants de mise en page
 │   │   └── ui/       # Composants UI réutilisables
 │   └── lib/          # Utilitaires et configurations
-├── .env.local         # Variables d&apos;environnement
+├── .env.local         # Variables d'environnement
 └── package.json       # Dépendances et scripts
 ```
 
 ## Fonctionnalités
 
-- Page d&apos;accueil avec présentation de l&apos;association
+- Page d'accueil avec présentation de l'association
 - Liste des événements à venir
 - Liste des épreuves disponibles
 - Formulaire de contact
@@ -97,7 +97,7 @@ velorunfestival-site/
 ## Contribution
 
 1. Créez une branche pour votre fonctionnalité (`git checkout -b feature/ma-fonctionnalite`)
-2. Committez vos changements (`git commit -m &apos;Ajout de ma fonctionnalité&apos;`)
+2. Committez vos changements (`git commit -m 'Ajout de ma fonctionnalité'`)
 3. Poussez vers la branche (`git push origin feature/ma-fonctionnalite`)
 4. Ouvrez une Pull Request
 

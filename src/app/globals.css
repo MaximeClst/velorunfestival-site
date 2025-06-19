@@ -44,16 +44,16 @@
 }
 
 :root {
-  --background: 206 40% 99%;
-  --foreground: 206 54% 0%;
-  --muted: 176 9% 85%;
-  --muted-foreground: 176 5% 33%;
-  --popover: 206 40% 99%;
-  --popover-foreground: 206 54% 0%;
-  --card: 206 40% 99%;
-  --card-foreground: 206 54% 0%;
-  --border: 206 4% 89%;
-  --input: 206 4% 89%;
+  --background: 0 0% 98%;
+  --foreground: 0 0% 18%;
+  --muted: 0 12% 90%;
+  --muted-foreground: 0 12% 30%;
+  --popover: 0 0% 95%;
+  --popover-foreground: 0 0% 8%;
+  --card: 0 0% 96%;
+  --card-foreground: 0 0% 13%;
+  --border: 0 0% 93%;
+  --input: 0 0% 90%;
   --primary: 206 61% 45%;
   --primary-foreground: 0 0% 100%;
   --secondary: 176 61% 45%;
@@ -72,16 +72,16 @@
 }
 
 .dark {
-  --background: 206 37% 3%;
-  --foreground: 206 30% 100%;
-  --muted: 176 9% 15%;
-  --muted-foreground: 176 5% 67%;
-  --popover: 206 37% 3%;
-  --popover-foreground: 206 30% 100%;
-  --card: 206 37% 3%;
-  --card-foreground: 206 30% 100%;
-  --border: 206 4% 10%;
-  --input: 206 4% 10%;
+  --background: 0 0% 2%;
+  --foreground: 0 0% 100%;
+  --muted: 0 12% 15%;
+  --muted-foreground: 0 12% 67%;
+  --popover: 0 0% 5%;
+  --popover-foreground: 0 0% 100%;
+  --card: 0 0% 3%;
+  --card-foreground: 0 0% 100%;
+  --border: 0 0% 10%;
+  --input: 0 0% 10%;
   --primary: 206 61% 45%;
   --primary-foreground: 0 0% 100%;
   --secondary: 176 61% 45%;
@@ -97,6 +97,7 @@
   --chart-4: 176 61% 48%;
   --chart-5: 206 64% 45%;
 }
+
 .logo-partenaire {
   width: 80px;
   height: 80px;

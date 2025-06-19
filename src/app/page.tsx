@@ -20,7 +20,7 @@ export default function Home() {
         </div>
 
         {/* Contenu */}
-        <div className="bg-white py-20">
+        <div className="bg-primary py-20">
           <div className="container mx-auto text-center px-4">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Velo Run Festival
@@ -33,12 +33,7 @@ export default function Home() {
               <Button asChild size="lg">
                 <Link href="/evenements">Voir les événements</Link>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="bg-white/10 hover:bg-white text-black hover:text-black backdrop-blur-sm"
-              >
+              <Button asChild variant="outline" size="lg">
                 <Link href="/contact">Nous contacter</Link>
               </Button>
             </div>
